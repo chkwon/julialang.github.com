@@ -8,12 +8,21 @@ It provides a sophisticated compiler, [distributed parallel execution](http://do
 Julia's Base library, largely written in Julia itself, also integrates mature, best-of-breed open source C and Fortran libraries for [linear algebra](http://docs.julialang.org/en/stable/stdlib/linalg/), [random number generation](http://docs.julialang.org/en/stable/stdlib/numbers/#random-numbers), [signal processing](http://docs.julialang.org/en/stable/stdlib/math/#signal-processing), and [string processing](http://docs.julialang.org/en/stable/stdlib/strings/#strings).
 In addition, the Julia developer community is contributing a number of [external packages](http://pkg.julialang.org) through Julia's built-in package manager at a rapid pace. [IJulia](https://github.com/JuliaLang/IJulia.jl), a collaboration between the [Jupyter](http://jupyter.org) and Julia communities, provides a powerful browser-based graphical notebook interface to Julia.
 
-[JuliaCon 2015](http://juliacon.org/2015) at MIT was a huge success. The [videos](https://www.youtube.com/playlist?list=PLP8iPy9hna6Sdx4soiGrSefrmOPdUWixM) are now online, and a random video from JuliaCon 2015 is presented here.
+<!--
+This keynote talk by Stefan Karpinski at [ODSC Boston](https://www.odsc.com/boston) (2016) on [the two language problem](https://www.youtube.com/watch?v=B9moDuSYzGo) explains much of the motivation behind Julia:
 
-{% include juliacon-player-2015.html %}
+<div style="text-align: center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B9moDuSYzGo" frameborder="0" allowfullscreen></iframe>
+</div>
+-->
 
 Julia programs are organized around [multiple dispatch](http://docs.julialang.org/en/stable/manual/methods/#man-methods); by defining functions and overloading them for different combinations of argument types, which can also be user-defined.
 For a more in-depth discussion of the rationale and advantages of Julia over other systems, see the following highlights or read the [introduction](http://docs.julialang.org/en/stable/manual/introduction/) in the [online manual](http://docs.julialang.org).
+
+
+JuliaCon 2016, the annual conference on Julia was held during June 21st - 25th at MIT. Below is a random video from our youtube playlist of the talks. Click on the playlist icon to check out the other videos.
+
+{% include juliacon-player-2016.html %}
 
 # A Summary of Features
 
@@ -70,7 +79,7 @@ with <a href="https://github.com/dcjones/Gadfly.jl">Gadfly</a>.
 These benchmarks, while not comprehensive, do test compiler performance on a range of common code patterns, such as function calls, string parsing, sorting, numerical loops, random number generation, and array operations.
 It is important to note that these benchmark implementations are not written for absolute maximal performance (the fastest code to compute `fib(20)` is the constant literal `6765`).
 Rather, all of the benchmarks are written to test the performance of specific algorithms implemented in each language.
-In particular, all languages use the same algorithm: the Fibonacci benchmarks are all recursive while the pi summation benchmarks are all iterative; the "algorithm" for random matrix multiplication is to call LAPACK, except where that's not possible, such as in JavaScript.
+In particular, all languages use the same algorithm: the Fibonacci benchmarks are all recursive while the pi summation benchmarks are all iterative; the "algorithm" for random matrix multiplication is to call the most obvious built-in/standard random-number and matmul routines (or to directly call BLAS if the language does not provide a high-level matmul), except where a matmul/BLAS call is not possible (such as in JavaScript).
 The point of these benchmarks is to compare the performance of specific *algorithms* across language implementations, not to compare the fastest means of computing a result, which in most high-level languages relies on calling C code.
 Raw benchmark numbers in CSV format are available [here](/benchmarks.csv).
 

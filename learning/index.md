@@ -4,6 +4,10 @@ title:  Learning Julia
 ---
 # Books
 
+- [Julia Programming for Operations Research: A Primer on Computing](http://www.chkwon.net/julia) by Changhyun Kwon (246 pages; published: 2016-05; ISBN: 978-1533328793) 
+    This book aims to teach how one can solve various optimization problems arising in operations research and management science. 
+- [Julia High Performance](https://www.packtpub.com/application-development/julia-high-performance) by Avik Sengupta (120 pages; published: 2016-05; ISBN: 9781785880919) 
+    This is a book about performance optimisation of Julia programs, showing how to design and write Julia code that fully realises the potential speed of the language and its libraries. 
 - [Mastering Julia](https://www.packtpub.com/application-development/mastering-julia) by Malcolm Sherrington - published by Packt Publishing (410 pages; published: 2015-07; ISBN: 9781783553310)
 - [Getting Started with Julia Programming](https://www.packtpub.com/application-development/getting-started-julia-programming/) by Ivo Balbaert - published by Packt Publishing (214 pages; published: 2015-02-28; ISBN: 9781783284795)
 - [Seven More Languages in Seven Weeks](https://pragprog.com/book/7lang/seven-more-languages-in-seven-weeks) by Bruce Tate, Fred Daoud, Jack Moffit and Ian Dees - published by The Pragmatic Programmers (350 pages; published: 2014-11-15; ISBN: 978-1-94122-215-7)
@@ -12,16 +16,16 @@ title:  Learning Julia
 
 ## Upcoming
 
-- [Julia Programming for Operations Research](http://www.chkwon.net/julia) by Changhyun Kwon - Online version is available for purchase now. Print version is planned in summer 2016. (approx. 210 pages)
 - [Learn Julia](http://www.manning.com/voncsefalvay/) by [Chris von Csefalvay](http://www.chrisvoncsefalvay.com) - published by Manning (approx. 375 pages, in [Early Access](http://www.manning.com/about/meap.html), ISBN: 9781617292835). The companion Github repo to the book is available [here](https://github.com/chrisvoncsefalvay/juliabook).
 
 
 # Tutorials
 
 - [Programming in Julia (Quantitative Economics)](http://quant-econ.net/jl/learning_julia.html) - by Thomas J. Sargent and John Stachurski. Along with being a complete textbook with Julia code for macroeconomics, this also is a very good introduction to Julia.
-- [The Julia Express](http://bogumilkaminski.pl/files/julia_express.pdf) by [Bogomił Kamiński](http://bogumilkaminski.pl)
+- [The Julia Express](https://github.com/bkamins/The-Julia-Express) by [Bogumił Kamiński](http://bogumilkaminski.pl)
 - [Introducing Julia wikibook](https://en.wikibooks.org/wiki/Introducing_Julia)
 - [Julia by Example](http://www.scolvin.com/juliabyexample/) by [Samuel Colvin](http://www.scolvin.com/)
+- [Statistical Learning in Julia by Example](https://github.com/scidom/StatsLearningByExample.jl) by [Theodore Papamarkou](http://www.gla.ac.uk/schools/mathematicsstatistics/staff/theodorepapamarkou/)
 - [Learn Julia in Y minutes](http://learnxinyminutes.com/docs/julia/) by [Leah Hanson](http://blog.leahhanson.us/)
 - [Learn Julia the Hard Way](https://github.com/chrisvoncsefalvay/learn-julia-the-hard-way) by [Chris von Csefalvay](http://chrisvoncsefalvay.com/)
 - [Hands-on Julia](https://github.com/dpsanders/hands_on_julia) by [David P. Sanders](http://sistemas.fciencias.unam.mx/~dsanders/)
